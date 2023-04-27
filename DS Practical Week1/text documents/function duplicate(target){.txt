@@ -1,0 +1,16 @@
+function duplicate(target){
+let temp=null;
+let current=this.head;
+while(current){
+if(current.value==target){
+if(temp==null){
+this.head=current.next;
+}else{
+temp.next=current.next;
+}
+}else{
+temp=current;
+}
+current=current.next;
+}
+}

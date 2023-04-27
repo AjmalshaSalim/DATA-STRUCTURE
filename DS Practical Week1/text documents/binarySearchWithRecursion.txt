@@ -1,0 +1,16 @@
+let array=[222,333,444,555,666];
+
+function binary(target,array,start,end){
+let mid=Math.floor((start+end)/2);
+
+if(array[mid]==target){
+return console.log("found");
+}
+if(array[mid]>target){
+return binary(target,array,start,mid-1);
+}else{
+return binary(target,array,mid+1,end);
+}
+
+)
+binary(444,array,0,array.length-1);
